@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         
         /*
          ***** The problem is here ******
+         This is happening only on iOS 11 - iOS 10 bar button items change font as expected
          
          Bar button items do not get affected by setting the title text attributes
          It seems that the project HAS TO either:
