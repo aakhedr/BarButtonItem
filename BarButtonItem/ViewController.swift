@@ -67,6 +67,8 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(fontName, forKey: userDefaultsKeyForFontName)
     }
     
+    // Different look than bar button items.
+    // We do not want to change its title font at this stage.
     private func setupChangeFontButton() {
         changeFontButton.titleLabel?.textColor = .black
         changeFontButton.layer.borderWidth = 1

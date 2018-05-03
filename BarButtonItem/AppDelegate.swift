@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let baseFont = checkForSavedFont()
         
         /*
-         Appearance proxies on
+         Set appearance proxies on
          1. navigation bar
          2. bar button items
          work as expected on app launch.
@@ -44,6 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    /*
+     Check to see there is already a font saved user defaults.
+     If not save Palatino font (This is shipped with both iOS versions 10 and 11 - So app should not crash
+     */
     private func checkForSavedFont() -> UIFont {
         var fontName: String
         
